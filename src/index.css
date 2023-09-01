@@ -1,0 +1,200 @@
+/* Universal Styles */
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    line-height: 1.1;
+    text-align: center;
+    align-items: center;
+    background-color: #eff5f3;
+  }
+
+/* Loading Component Styles */
+.loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+
+/* App Component Styles */
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.tours-title {
+  margin: 3rem 1rem 1.5rem 1rem;
+}
+
+.tours-title h1 {
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.tours-title hr {
+  width: 70px;
+  height: 2px;
+  background-color: rgb(34, 111, 226);
+  margin: 0 auto 1rem auto;
+}
+
+.refresh-button {
+  width: 100px;
+  border: transparent;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: #004E89;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.90rem;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  transform: scale(1.10);
+}
+
+/* Tours Component Styles */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 900px;
+  font-size: 18px;
+  margin: 0 auto;
+}
+  
+.tours-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+/* Tour Component Styles */
+.single-tour-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 4px 6px #ecebeb;
+  margin-bottom: 2rem;
+}
+
+.single-tour-container img {
+  width: 900px;
+}
+
+/* Tours Info Section Styles */
+.single-tour-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.tour-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tour-info hr {
+  margin-left: 0;
+  margin-bottom: 0;
+  width: 120px;
+  height: 1px;
+  background-color: rgb(34, 111, 226);
+}
+
+.tour-price {
+  display: flex;
+  width: 65px;
+  padding: 0.25rem;
+  background-color: #eff5f3;
+  color: #004E89;
+  border-radius: 10px;
+}
+
+/* Description Section with button */
+.single-tour p {
+  margin: 0.5rem 0 1rem 0;
+  text-align: left;
+}
+
+.single-tour button {
+  border: transparent;
+  background-color: #ffffff;
+  color: #004E89;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.90rem;
+}
+
+/* Not Interested Button Styles */
+.single-tour .delete-button {
+  border-radius: 10px;
+  border: 2px solid #9db6ac70;
+  color: red;
+  cursor: pointer;
+  padding: 0.25rem 2rem; 
+  margin-bottom: 0.5rem;
+}
+
+.single-tour .delete-button:hover {
+  transform: scale(1.10);
+}
+
+
+/* Responsiveness of the Tours Website */
+@media only screen and (max-width: 970px) {
+  section {
+    margin: 0;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .tours-container {
+    width: 90%;
+  }
+  
+  .single-tour-container img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .tour-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tour-info hr {
+    margin: 0.5rem auto 0 auto;
+    width: 70%;
+  }
+
+  .tour-info h3 {
+    margin: 0.5rem 0;
+  }
+}
